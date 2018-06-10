@@ -1,4 +1,4 @@
-## Wepay Wrapper For Laravel 4
+## Wepay Wrapper For Laravel 5
 This wrapper allows you to use the WePay API within Laravel using the standard Facade structure. If you would like more information on wepay, please checkout https://www.wepay.com/
 
 ## Installation
@@ -6,7 +6,7 @@ First you need edit your `composer.json` file with the following:
 
 ```js
 "require-dev": {
-    "ryuske/wepay-laravel": "dev-master",
+    "shadomax/wepay-laravel": "dev-master",
     "wepay/PHP-SDK": "*"
 }
 ```
@@ -20,7 +20,7 @@ The first section is the providers array, like so:
 'providers' => array(
     // ...
 
-    'Ryuske\WepayLaravel\WepayLaravelServiceProvider'
+    'Shadomax\WepayLaravel\WepayLaravelServiceProvider'
 )
 ```
 
@@ -29,16 +29,16 @@ The 2nd section is within the aliases array, like this:
 'aliases' => array(
     // ...
 
-    'WepayWrapper'    => 'Ryuske\WepayLaravel\Facades\WepayLaravel'
+    'WepayWrapper'    => 'Shadomax\WepayLaravel\Facades\WepayLaravel'
 )
 ```
 
 You just finished the installation of the Wrapper! Whoo! But... Now we have to configure it.
 
 ## Configuration
-First, run the command `php artisan config:publish ryuske/wepay-laravel`
+First, run the command `php artisan config:publish shadomax/wepay-laravel`
 
-Once you've run that command, open up the file `app/config/packages/ryuske/wepay-laravel/config.php`
+Once you've run that command, open up the file `app/config/packages/shadomax/wepay-laravel/config.php`
 
 Now, primarily what you need to change in this file are the production values for `client_id`, `client_secret`, `access_token` and `account_id`.
 

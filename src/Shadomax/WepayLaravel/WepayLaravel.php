@@ -1,6 +1,6 @@
 <?php
 
-namespace Ryuske\WepayLaravel;
+namespace Shadomax\WepayLaravel;
 
 class WepayLaravel {
 

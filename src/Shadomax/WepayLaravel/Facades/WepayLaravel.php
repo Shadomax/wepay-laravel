@@ -1,6 +1,6 @@
 <?php
 
-namespace Ryuske\WepayLaravel\Facades;
+namespace Shadomax\WepayLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,17 +1,17 @@
 {
-    "name": "ryuske/wepay-laravel",
-    "description": "WePay API wrapper for Laravel 4",
+    "name": "shadomax/wepay-laravel",
+    "description": "WePay API wrapper for Laravel 5",
     "keywords": ["laravel", "wepay"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Kenyon Haliwell",
-            "email": "kenyon@moveyourmountain.org"
+            "name": "Alain Mbeng",
+            "email": "cosmasalain@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "php": ">=7.0",
+        "illuminate/support": "5.5.*"
     },
     "require-dev": {
         "wepay/PHP-SDK": "*"
@@ -21,7 +21,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Ryuske\\WepayLaravel\\": "src/"
+            "Shadomax\\WepayLaravel\\": "src/"
         }
     },
     "minimum-stability": "dev",

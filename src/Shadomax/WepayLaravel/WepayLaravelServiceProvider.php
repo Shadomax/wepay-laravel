@@ -1,4 +1,4 @@
-<?php namespace Ryuske\WepayLaravel;
+<?php namespace Shadomax\WepayLaravel;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,7 +18,7 @@ class WepayLaravelServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('ryuske/wepay-laravel');
+		$this->package('shadomax/wepay-laravel');
 	}
 
 	/**
