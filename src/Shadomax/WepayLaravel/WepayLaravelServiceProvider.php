@@ -1,4 +1,6 @@
-<?php namespace Shadomax\WepayLaravel;
+<?php 
+
+namespace Shadomax\WepayLaravel;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -28,7 +30,10 @@ class WepayLaravelServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['wepay-laravel'] = $this->app->share(function() {
+		// $this->app['wepay-laravel'] = $this->app->share(function() {
+  //           return new WepayLaravel();
+  //       });
+		$this->app->bind('wepay-laravel', function ($app) {
             return new WepayLaravel();
         });
 	}
